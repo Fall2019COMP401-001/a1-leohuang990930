@@ -66,8 +66,8 @@ public class A1Adept {
 				
 		}
 		
-		System.out.println("Biggest:" + " " + maxName + "( " + String.format("%,.2f", max) + ")");
-		System.out.println("Smallest:" + " " + minName + "( " + String.format("%,.2f", min) + ")");
+		System.out.println("Biggest:" + " " + maxName + " (" + String.format("%,.2f", max) + ")");
+		System.out.println("Smallest:" + " " + minName + " (" + String.format("%,.2f", min) + ")");
 		System.out.println("Average:" + " " + String.format("%,.2f", average));
 	}
 }
