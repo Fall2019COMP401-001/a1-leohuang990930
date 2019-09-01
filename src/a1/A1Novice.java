@@ -12,7 +12,7 @@ public class A1Novice {
 			String b=scan.next();
 			String c=scan.next();
 			double d=scan.nextInt();
-			double total=0;
+			double total=0.00;
 			for (int z = 0; z < d; z++) {
 				int e=scan.nextInt();
 				String f=scan.next();
@@ -20,7 +20,7 @@ public class A1Novice {
 				double h = e*g;
 				total +=h;
 			}
-			System.out.println(b.substring(0, 1) + "." + " " + c + " " + total);
+			System.out.println(b.substring(0, 1) + "." + " " + c + ": " + total);
 		}
 	}
 }
