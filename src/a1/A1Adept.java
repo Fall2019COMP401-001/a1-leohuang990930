@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class A1Adept {
 
+
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
-		String[] name = null;
+		String[] name = new String[110];
 		
-		double[] amount = null;
-		
-		String[] goodName=null;
-		double[] goodPrice=null;
+		double[] amount = new double[110];
+		String[] goodName=new String[100];
+		double[] goodPrice=new double[100];
 		for (int i = 0; i < a; i++) {
-			goodName [i] = scan.next();
+			goodName[i] = scan.next();
 			goodPrice[i]= scan.nextDouble();
 	    }
 		int d = scan.nextInt();
@@ -31,23 +31,23 @@ public class A1Adept {
 				int number = scan.nextInt();
 				String food = scan.next();
 				for (int i = 0; i < goodName.length; i++) {
-					if (food.contentEquals(goodName[i])) {
+					if (food.equals(goodName[i])) {
 						individual += number*goodPrice[i];
 					}
 				}
 				
 			}
-		amount[z] = individual;
+			amount[z] = individual;
 		}
 		double max = amount[0];
 		double min = amount[0];
 		double average = 0;
-		for (int i = 0; i < amount.length; i++) {
+		for (int i = 0; i < 20; i++) {
 			average += amount[i];
 			if (amount[i] > max) {
 				max = amount[i];
 			}
-			if (amount[i] < min) {
+			if (amount[i] < min && amount[i] !=0) {
 				min = amount[i];
 			}
 		}
@@ -66,8 +66,8 @@ public class A1Adept {
 				
 		}
 		
-		System.out.println("Biggest:" + " " + maxName + "(" + max + ")");
-		System.out.println("Smallest:" + " " + minName + "(" + min + ")");
-		System.out.println("Average:" + " " + average);
+		System.out.println("Biggest:" + " " + maxName + "(" + String.format("%,.2f", max) + ")");
+		System.out.println("Smallest:" + " " + minName + "(" + String.format("%,.2f", min) + ")");
+		System.out.println("Average:" + " " + String.format("%,.2f", average));
 	}
 }
