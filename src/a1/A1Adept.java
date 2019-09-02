@@ -15,11 +15,13 @@ public class A1Adept {
 		String[] goodName=new String[100];
 		double[] goodPrice=new double[100];
 		for (int i = 0; i < a; i++) {
+			// this for loop is used to create a list of food
 			goodName[i] = scan.next();
 			goodPrice[i]= scan.nextDouble();
 	    }
 		int d = scan.nextInt();
 		for (int z = 0; z < d; z++) {
+			// this for loop stands for each customer
 			String n = scan.next();
 			String m = scan.next();
 			String combined = n + " " + m;
@@ -28,6 +30,7 @@ public class A1Adept {
 			int x = scan.nextInt();
 			double individual = 0;
 			for (int k = 0; k < x; k++) {
+				// this for loop stands for each good
 				int number = scan.nextInt();
 				String food = scan.next();
 				for (int i = 0; i < goodName.length; i++) {
@@ -43,6 +46,7 @@ public class A1Adept {
 		double min = amount[0];
 		double average = 0;
 		for (int i = 0; i < 20; i++) {
+			// function for getting max and min
 			average += amount[i];
 			if (amount[i] > max) {
 				max = amount[i];

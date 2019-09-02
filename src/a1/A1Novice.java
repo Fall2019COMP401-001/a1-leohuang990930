@@ -9,11 +9,12 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		int a=scan.nextInt();
 		for (int i = 0; i < a; i++) {
+			// this for loop stands for each properties of customers
 			String b=scan.next();
 			String c=scan.next();
 			double d=scan.nextInt();
 			double total=0;
-			
+			// this for stands for properties of goods
 			for (int z = 0; z < d; z++) {
 				int e=scan.nextInt();
 				String f=scan.next();
