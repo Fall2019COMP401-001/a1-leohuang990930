@@ -23,7 +23,7 @@ public class A1Jedi {
 			for (int k = 0; k < x; k++) {
 				int number = scan.nextInt();
 				String food = scan.next();
-				for (int nn = 0; nn < 20; nn++) {
+				for (int nn = 0; nn < foodName.length; nn++) {
 					if (food.equals(foodName[nn])) {
 						purchase[nn] += number;
 						people[nn]++;
