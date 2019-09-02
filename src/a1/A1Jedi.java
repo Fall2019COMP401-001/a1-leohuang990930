@@ -23,11 +23,12 @@ public class A1Jedi {
 			String n = scan.next();
 			String m = scan.next();
 			// also useless
+			for(int i=0;i<people.length;i++) {
+				peopleCopy[i]=people[i];
+			}
 			int x = scan.nextInt();
 			for (int k = 0; k < x; k++) {
-				for(int i=0;i<people.length;i++) {
-					peopleCopy[i]=people[i];
-				}
+				
 				int number = scan.nextInt();
 				String food = scan.next();
 				for (int nn = 0; nn < foodName.length; nn++) {
@@ -38,11 +39,15 @@ public class A1Jedi {
 					}
 					
 				}
+				for (int i = 0; i < people.length; i++) {
+					System.out.println(people[i]+"      "+peopleCopy[i]);
+				}
+				System.out.println("*");
 				
-				for(int i=0;i<people.length;i++) {
-					if(people[i]-peopleCopy[i]>1) {
-						people[i]=peopleCopy[i]+1;
-					}
+			}
+			for(int i=0;i<people.length;i++) {
+				if(people[i]-peopleCopy[i]>1) {
+					people[i]=peopleCopy[i]+1;
 				}
 			}
 			
