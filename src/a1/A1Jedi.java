@@ -11,6 +11,7 @@ public class A1Jedi {
 		int[] people = new int[100];
 		int[] purchase = new int[100];
 		String[] foodName=new String[100];
+		int[] peopleCopy = new int[100];
 		// This creates arrays for number of customers, amount of food they purchase, and food name
 		for (int i = 0; i < a; i++) {
 			foodName[i] = scan.next();
@@ -24,6 +25,9 @@ public class A1Jedi {
 			// also useless
 			int x = scan.nextInt();
 			for (int k = 0; k < x; k++) {
+				for(int i=0;i<people.length;i++) {
+					peopleCopy[i]=people[i];
+				}
 				int number = scan.nextInt();
 				String food = scan.next();
 				for (int nn = 0; nn < foodName.length; nn++) {
@@ -33,6 +37,11 @@ public class A1Jedi {
 						people[nn]++;
 					}
 					
+				}
+				for(int i=0;i<people.length;i++) {
+					if(people[i]-peopleCopy[i]>1) {
+						people[i]=peopleCopy[i]+1;
+					}
 				}
 			}
 			
