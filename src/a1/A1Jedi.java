@@ -46,21 +46,7 @@ public class A1Jedi {
 			}
 			
 		}
-		for (int i = 0; i < foodName.length; i++) {
-			
-			if (foodName[i].equals("Banana")){
-				people[i] = 2;
-			}
-			if (foodName[i].equals("Salami")) {
-				people[i] = 1;
-			}
-			if (foodName[i].equals("Milk")) {
-				people[i] = 1;
-			}
-			if (foodName[i+1] == null) {
-				break;
-			}
-		}
+		
 		for (int i = 0; i < foodName.length; i++) {
 			if (purchase[i] == 0) {
 				System.out.println("No customers bought " + foodName[i]);
