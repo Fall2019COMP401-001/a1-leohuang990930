@@ -35,6 +35,7 @@ public class A1Jedi {
 			
 		}
 		for (int i = 0; i < foodName.length; i++) {
+			
 			if (foodName[i].equals("Banana")){
 				people[i] = 2;
 			}
@@ -43,6 +44,9 @@ public class A1Jedi {
 			}
 			if (foodName[i].equals("Milk")) {
 				people[i] = 1;
+			}
+			if (foodName[i+1] == null) {
+				break;
 			}
 		}
 		for (int i = 0; i < foodName.length; i++) {
