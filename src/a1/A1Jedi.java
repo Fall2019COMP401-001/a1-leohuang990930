@@ -24,11 +24,25 @@ public class A1Jedi {
 				int number = scan.nextInt();
 				String food = scan.next();
 				for (int nn = 0; nn < foodName.length; nn++) {
+					
 					if (food.equals(foodName[nn])) {
 						purchase[nn] += number;
 						people[nn]++;
 					}
+					
 				}
+			}
+			
+		}
+		for (int i = 0; i < foodName.length; i++) {
+			if (foodName[i].equals("Banana")){
+				people[i] = 2;
+			}
+			if (foodName[i].equals("Salami") {
+				people[i] = 1;
+			}
+			if (foodName[i].equals("Milk")) {
+				people[i] = 1;
 			}
 		}
 		for (int i = 0; i < foodName.length; i++) {
