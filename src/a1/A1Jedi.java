@@ -39,10 +39,6 @@ public class A1Jedi {
 					}
 					
 				}
-				for (int i = 0; i < people.length; i++) {
-					System.out.println(people[i]+"      "+peopleCopy[i]);
-				}
-				System.out.println("*");
 				
 			}
 			for(int i=0;i<people.length;i++) {
