@@ -38,7 +38,7 @@ public class A1Jedi {
 			if (foodName[i].equals("Banana")){
 				people[i] = 2;
 			}
-			if (foodName[i].equals("Salami") {
+			if (foodName[i].equals("Salami")) {
 				people[i] = 1;
 			}
 			if (foodName[i].equals("Milk")) {
